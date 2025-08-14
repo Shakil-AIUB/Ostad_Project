@@ -1,14 +1,13 @@
-name: github action ci cd
+name: github action cii cd
 
 on:
   push:
     branches:
       - main
-pull_request:
+  pull_request:
     branches:
       - main
 jobs:
-  read_hello_file:
   read_hello_file:
     runs-on: ubuntu-latest
     steps:
