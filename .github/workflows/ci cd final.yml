@@ -7,10 +7,9 @@ on:
 pull_request:
     branches:
       - main
-
 jobs:
   read_hello_file:
-  
+  read_hello_file:
     runs-on: ubuntu-latest
     steps:
       - name: Git clone
