@@ -11,22 +11,11 @@ pull_request:
 
 
 jobs:
-  build:
+  read_hello_file:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Git clone
         uses: actions/checkout@v2
 
-      - name: read hello.txt
-        run: echo "Hello Ostad. Welcome to ostad nama" > hello.txt 
-  build_job:
-      - name: test_job
-        runs-on: ubuntu-latest
-        steps:
-      - name: Git Clone
-        uses: actions/checkout@v2
-        
-      - name: set Up node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '22'
+      - name: Read hello.txt
+        run: cat hello.txt
