@@ -29,6 +29,4 @@ jobs:
       - name: set Up node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'
-
-          name: Install dependencies
+          node-version: '22'
