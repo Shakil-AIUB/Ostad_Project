@@ -17,6 +17,3 @@ jobs:
 
       - name: Read hello.txt
         run: cat hello.txt
-
-      - name: Read hello.txt
-        run: cat hello.txt
